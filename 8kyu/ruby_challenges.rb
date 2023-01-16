@@ -89,3 +89,23 @@
 # def litres(time)
 #   time.div(2)
 # end
+
+# DESCRIPTION:
+
+# Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
+
+# My solution:
+
+# def evan_or_odd(number)
+#   if number % 2 == 0
+#     return "Even"
+#   else
+#     return "Odd"
+#   end
+# end
+
+# Best solution:
+
+# def even_or_odd(number)
+#   number.even? ? "Even" : "Odd"
+# end
