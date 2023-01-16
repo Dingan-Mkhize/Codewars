@@ -64,3 +64,28 @@
 #   l = SURNAME[sur[0].upcase]
 #   f && l ? "#{f} #{l}" : "Your name must start with a letter from A - Z."
 # end
+
+# DESCRIPTION:
+
+# Nathan loves cycling.
+# Because Nathan knows it is important to stay hydrated, he drinks 0.5 litres
+# of water per hour of cycling.
+# You get given the time and you need to return the number of litres Nathan
+# will drink, rounded to the smallest value.
+
+# For example:
+# time = 3 ----> litres = 1
+# time = 6.7---> litres = 3
+# time = 11.8--> litres = 5
+
+# My solution:
+
+# def litres(time)
+#   (time * 0.5).floor
+# end
+
+# Other solution:
+
+# def litres(time)
+#   time.div(2)
+# end
