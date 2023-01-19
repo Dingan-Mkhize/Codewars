@@ -214,3 +214,32 @@
 # def shortcut(s)
 #   s.delete("aeiou")
 # end
+
+# DESCRIPTION:
+
+# Now you have to write a function that takes an argument and returns the square of it.
+
+# My solution:
+
+# def square(n) n**2
+# end
+
+# Other solutions:
+
+# def square( a )
+#   a ** 2
+# end
+
+# def square num
+#   raise ArgumentError, 'Argument must be a numbers' unless num.is_a?(Integer) 
+#   num*num
+# end
+
+# def square(number_to_sq)
+#  number_to_sq * number_to_sq
+# end
+
+# def square(num)
+#   num * num
+# end
+
