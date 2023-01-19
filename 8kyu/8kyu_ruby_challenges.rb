@@ -1,3 +1,4 @@
+# Simple Multiplication
 #DESCRIPTION:
 
 # This kata is about multiplying a given number by eight if it is an even number and by nine otherwise.
@@ -26,6 +27,8 @@
 
 # Example(Input --> Output): "The greatest victory is that which requires no battle" --> "battle no requires which that is victory greatest The"
 
+# Reversed Words
+
 # My solution:
 
 # def solution(sentence)
@@ -37,6 +40,8 @@
 # def solution(sentence)
 #   sentence.split.reverse.join(" ")
 # end
+
+# Crash Override
 
 # DESCRIPTION:
 
@@ -65,6 +70,8 @@
 #   f && l ? "#{f} #{l}" : "Your name must start with a letter from A - Z."
 # end
 
+# Keep Hydrated!
+
 # DESCRIPTION:
 
 # Nathan loves cycling.
@@ -90,6 +97,8 @@
 #   time.div(2)
 # end
 
+# Even or Odd
+
 # DESCRIPTION:
 
 # Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
@@ -109,6 +118,8 @@
 # def even_or_odd(number)
 #   number.even? ? "Even" : "Odd"
 # end
+
+# Invert Values
 
 # DESCRIPTION:
 
@@ -131,6 +142,8 @@
 #   list.map { |n| -n }
 # end
 
+# String Repeat
+
 # DESCRIPTION:
 
 # Write a function that accepts an integer n and a string s as parameters, and returns a string of s repeated exactly n times.
@@ -144,6 +157,8 @@
 # def repeat_str (n, s)
 #   s * n
 # end
+
+# Add Length
 
 # DESCRIPTION:
 
@@ -178,6 +193,8 @@
 #   str.split.map{|i| i + " #{i.size}" }
 # end
 
+# Beginner - Reduce but Grow
+
 # DESCRIPTION:
 
 # Given a non-empty array of integers, return the result of multiplying the values together in order. Example:
@@ -195,6 +212,8 @@
 # def grow(x) 
 #   x.reduce(:*)
 # end
+
+# Vowel Remover
 
 # DESCRIPTION:
 
@@ -214,6 +233,8 @@
 # def shortcut(s)
 #   s.delete("aeiou")
 # end
+
+# Function 2 - Squaring an Argument
 
 # DESCRIPTION:
 
