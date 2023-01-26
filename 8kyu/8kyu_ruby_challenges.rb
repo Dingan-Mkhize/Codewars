@@ -297,3 +297,25 @@
 # def howManyLightsabersDoYouOwn *args
 #     args.last == 'Zach' ? 18 : 0
 # end
+
+# Convert a boolean to string
+
+# Implement a function which convert the given boolean value into its string representation.
+
+# Note: Only valid inputs will be given.
+
+# My solution:
+
+# def boolean_to_string(b)
+#   return b.to_s
+# end
+
+# Alternate solutions:
+
+# def boolean_to_string(b)
+#   b ? "true" : "false"
+# end
+
+# def boolean_to_string(b)
+#   b.inspect
+# end
