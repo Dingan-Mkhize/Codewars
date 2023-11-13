@@ -357,3 +357,28 @@
 # def other_angle(a, b)
 #     180 - (a + b)
 # end
+
+#Ruturn to sanity check
+
+#This function should return an object, but it's not doing what's intended. What's #wrong?
+
+#My solution:
+
+#def mystery()
+  #result = {
+    #"sanity": 'Hello'}
+  #return
+    #result
+#end
+
+
+# Merging sorted integer arrays(without duplicates).
+
+# Write a function that merges two sorted arrays into a single one. The arrays only contain integers. Also, the final outcome must be sorted and not have any duplicate.
+
+# My solution:
+
+# def merge_arrays(a, b)
+  #merged_array = (a + b).uniq.sort
+  #return merged_array
+#end
