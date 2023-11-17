@@ -397,3 +397,23 @@
   #index = haystack.index("needle")
   #return "found the needle at position #{index}" if index
 #end
+
+# To square(root) or not to square(root)
+
+# Instructions:
+
+# Write a method, that will get an integer array as parameter and will process every number from this array.
+
+# Return a new array with processing every number of the input-array like this:
+
+# If the number has an integer square root, take this, otherwise square the number.
+
+# My solution:
+
+# def square_or_square_root(arr)
+#   processed_array = arr.map do |number|
+#     integer_square_root = Math.sqrt(number).to_i
+#     integer_square_root**2 == number ? integer_square_root : number**2
+#   end
+#   processed_array
+# end
