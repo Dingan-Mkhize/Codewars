@@ -444,3 +444,6 @@
 # def any_arrows(arrows)
 #   arrows.any? { |arrow| !arrow['damaged'] }
 # end
+
+
+
