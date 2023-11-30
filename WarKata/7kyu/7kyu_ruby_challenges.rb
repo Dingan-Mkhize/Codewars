@@ -47,3 +47,38 @@
 # def is_leap_year(year)
 #   DateTime.leap? year
 # end
+
+# Product of the main diagonal of a square matrix.
+
+# Given a list of rows of a square matrix, find the product of the main diagonal.
+
+# Examples:
+
+#   [[1, 0], [0, 1]] should return 1
+#   [[1, 2, 3], [4, 5, 6], [7, 8, 9]] should return 45
+
+# My solution:
+
+# def main_diagonal_product(matrix)
+#   # Check if the matrix is empty
+#   return nil if matrix.empty?
+
+#   # Check if the matrix is a square matrix
+#   return nil unless matrix.all? { |row| row.length == matrix.length }
+
+#   # Initialize the product to 1
+#   product = 1
+
+#   # Iterate through the rows and multiply the main diagonal elements
+#   matrix.each_with_index do |row, i|
+#     product *= row[i]
+#   end
+
+#   return product
+# end
+
+# Better solution: 
+
+# def main_diagonal_product(mat)
+#   mat.each_with_index.inject(1) { |n, (v, i)| n * v[i] }
+# end
