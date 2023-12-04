@@ -82,3 +82,44 @@
 # def main_diagonal_product(mat)
 #   mat.each_with_index.inject(1) { |n, (v, i)| n * v[i] }
 # end
+
+# Smallest value of an array
+
+# Write a function that can return the smallest value of an array or the index of that value. The function's 2nd parameter will tell whether it should return the value or the index.
+
+# Assume the first parameter will always be an array filled with at least 1 number and no duplicates. Assume the second parameter will be a string holding one of two values: 'value' and 'index'.
+
+# min([1,2,3,4,5], 'value') // => 1
+# min([1,2,3,4,5], 'index') // => 0
+
+# My solution:
+
+# def find_smallest(numbers,to_return)
+# if to_return == 'value'
+#     # Return the smallest value in the array
+#     numbers.min
+#   elsif to_return == 'index'
+#     # Return the index of the smallest value in the array
+#     numbers.index(numbers.min)
+#   else
+#     # Handle invalid to_return
+#     puts 'Invalid to_return. Please use "value" or "index".'
+#     nil
+#   end
+# end
+
+# The function find_smallest takes two parameters: numbers (an array) and to_return (a string).
+
+# Inside the function, there is an if-elsif-else structure to determine what to return based on the value of to_return.
+
+# The first condition (if to_return == 'value') checks if to_return is equal to the string 'value'. If true, it returns the smallest value in the array using numbers.min.
+
+# The second condition (elsif to_return == 'index') checks if to_return is equal to the string 'index'. If true, it returns the index of the smallest value in the array using numbers.index(numbers.min).
+
+# If neither of the above conditions is true, it means that an invalid to_return value was provided. In this case, it prints an error message to the console using puts and returns nil.
+
+# Best solution: 
+
+# def find_smallest(numbers,to_return)
+#   to_return == "value" ? numbers.min : numbers.index(numbers.min)
+# end
