@@ -123,3 +123,40 @@
 # def find_smallest(numbers,to_return)
 #   to_return == "value" ? numbers.min : numbers.index(numbers.min)
 # end
+
+# Disemvowel Trolls
+
+# Trolls are attacking your comment section!
+
+# A common way to deal with this situation is to remove all of the vowels from the trolls' comments, neutralizing the threat.
+
+# Your task is to write a function that takes a string and return a new string with all vowels removed.
+
+# For example, the string "This website is for losers LOL!" would become "Ths wbst s fr lsrs LL!".
+
+# Note: for this kata y isn't considered a vowel.
+
+# My solution:
+
+# def disemvowel(str)
+#   vowels = "aeiouAEIOU"
+#   result = ""
+
+#   str.each_char do |char|
+#     result += char unless vowels.include?(char)
+#   end
+
+#   result
+# end
+
+#     vowels is a string containing all vowel characters.
+#     We initialize an empty string result to store the characters without vowels.
+#     We iterate through each character in the input string (str) using each_char.
+#     If the current character is not a vowel (not included in the vowels string), we append it to the result string.
+#     The final result is a string without vowels.
+
+# Better solution:
+
+# def disemvowel(str)
+#   str.delete('aeiouAEIOU')
+# end
