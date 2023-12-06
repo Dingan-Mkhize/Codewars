@@ -160,3 +160,37 @@
 # def disemvowel(str)
 #   str.delete('aeiouAEIOU')
 # end
+
+# Small enough? - Beginners 
+
+# You will be given an array and a limit value. You must check that all values in the array are below or equal to the limit value. If they are, return true. Else, return false.
+
+# You can assume all values in the array are numbers.
+
+# My solution: 
+
+# def small_enough(arr, limit)
+#   arr.all? { |value| value <= limit }
+# end
+
+# Method Definition:
+
+# def small_enough(arr, limit): This line defines a method named small_enough that takes two parameters—an array arr and a limit value.
+
+#   Array Check:
+
+# arr.all?: The all? method is used on the array arr. It returns true if the block provided evaluates to true for all elements in the array; otherwise, it returns false.
+
+# Block Execution:
+
+# { |value| value <= limit }: This block of code is passed to all?. It checks if each value in the array is less than or equal to the limit.
+
+# Return Statement:
+
+# The result of arr.all? { |value| value <= limit } is implicitly returned by the method. If all values in the array are less than or equal to the limit, it returns true; otherwise, it returns false.
+
+# Best solution:
+
+# def small_enough(a, limit)
+#   a.max <= limit
+# end
