@@ -194,3 +194,24 @@
 # def small_enough(a, limit)
 #   a.max <= limit
 # end
+
+# Re-open class:
+
+# Ruby and Javascript let you re-open classes so you can add new functionalities to existing classes and objects.
+
+# To demonstrate this, you'll have to add a new method (called my_new_method in Ruby or myNewMethod in JS / Coffeescript) into the String class that simply calls the upcase method (toUpperCase() in JS / Coffeescript), so that:
+
+# My solution:
+
+# class String
+#   def  my_new_method 
+#     self.upcase
+#     end
+#   end
+
+#   We reopen the String class and define my_new_method. The self keyword refers to the string object on which the method is called. The upcase method is a built-in Ruby method that converts all characters in the string to uppercase.
+
+#   Ruby and JavaScript are dynamic languages that allow modifications to classes at runtime. This includes adding new methods to existing classes.
+#   The self keyword in Ruby and this in JavaScript refer to the instance of the object on which the method is called, allowing you to manipulate the object's data.
+#   Caution:
+#   While this is a powerful feature, it should be used judiciously. Modifying built-in classes can lead to conflicts and unexpected behavior, especially in large codebases or when using external libraries.
