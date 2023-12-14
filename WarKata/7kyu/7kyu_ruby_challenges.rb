@@ -215,3 +215,21 @@
 #   The self keyword in Ruby and this in JavaScript refer to the instance of the object on which the method is called, allowing you to manipulate the object's data.
 #   Caution:
 #   While this is a powerful feature, it should be used judiciously. Modifying built-in classes can lead to conflicts and unexpected behavior, especially in large codebases or when using external libraries.
+
+# Remove All The Marked Elements of a List
+
+# Define a method/function that removes from a given array of integers all the values contained in a second array.
+
+# My solution:
+
+# class Array
+#   def remove_(integer_list, values_list)
+#     integer_list - values_list
+#   end
+# end
+
+# The method remove_ is defined with two parameters: original_array (the array from which you want to remove elements) and elements_to_remove (the array containing elements to be removed).
+# Inside the method, we use the - operator. This operator takes two arrays and returns a new array containing the elements of the first array that are not found in the second array.
+# In the example, array1 is [1, 2, 3, 4, 5] and array2 is [2, 4]. The method call remove_elements(array1, array2) returns a new array [1, 3, 5] since 2 and 4 are removed.
+# This method is concise and leverages Ruby's built-in array capabilities for efficient processing.
+
