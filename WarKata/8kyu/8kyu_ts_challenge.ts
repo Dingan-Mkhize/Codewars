@@ -53,3 +53,50 @@
 
 // The example demonstrates how to use the function with a string that might be used in an XSS attack. The htmlspecialchars function converts it into a safe string by replacing the harmful characters with their HTML entities.
 // By using this function, you can mitigate the risk of XSS attacks by sanitizing user input before rendering it on your web page. This is a crucial step in securing any application that accepts and displays user input.
+
+// Convert number to reversed array of digits
+
+// Given a random non-negative number, you have to return the digits of this number within an array in reverse order.
+// Example(Input => Output):
+
+// 35231 => [1,3,2,5,3]
+// 0 => [0]
+
+// My solution: 
+
+// export const digitize = (n: number): number[] => {
+//   // Step 1: Convert the number to a string
+//     let str = n.toString();
+
+//     // Step 2: Split the string into an array of characters
+//     let digits = str.split('');
+
+//     // Step 3: Reverse the array
+//     let reversedDigits = digits.reverse();
+
+//     // Step 4: Convert each element back to a number
+//     let result = reversedDigits.map(digit => parseInt(digit));
+
+//     return result;
+// };
+
+// Convert the Number to a String: Since we want to work with individual digits, it's easier to first convert the number to a string.
+// Split the String into an Array: Split the string into an array of its characters (which are the digits).
+// Reverse the Array: Reverse the array to get the digits in the reverse order.
+// Convert Each Element Back to a Number: Map each character back to its numeric form.
+
+// Better solution: 
+
+// export const digitize = (n: number): number[] => {
+//   return [...n.toString()].map(Number).reverse();
+// };
+
+// n.toString(): This converts the number n into a string. For example, if n is 35231, it becomes "35231".
+
+// [...n.toString()]: This syntax uses the spread operator (...) to spread the string into an array of its individual characters. For "35231", this creates ["3", "5", "2", "3", "1"].
+
+// .map(Number): The map function is used to iterate over each element of the array. The Number function is passed as the callback function to map, which converts each string element back into a number. So, the array ["3", "5", "2", "3", "1"] is transformed into [3, 5, 2, 3, 1].
+
+// .reverse(): Finally, the reverse method is called on the array to reverse its elements, resulting in [1, 3, 2, 5, 3].
+
+// This solution is efficient and makes good use of JavaScript/TypeScript's built-in methods to create a clean and readable one-liner. It's a great example of how understanding the language's features can lead to more elegant code.
