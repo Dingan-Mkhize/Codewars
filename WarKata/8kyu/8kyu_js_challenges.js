@@ -58,8 +58,6 @@ function otherAngle(a, b) {
 }
 */
 
-Is it a number?
-
 // My solution:
 
 // Given a string s, write a method (function) that will return true if its a valid single integer or floating number or false if its not.
@@ -110,3 +108,54 @@ Is it a number?
 // function isDigit(s) {
 //  return s==parseFloat(s);
 // }
+
+// Be Concise IV - Index of an element in an array
+
+// Provided is a function Kata which accepts two parameters in the following order: array, element and returns the index of the element if found and "Not found" otherwise. Your task is to shorten the code as much as possible in order to meet the strict character count requirements of the Kata. (no more than 161) You may assume that all array elements are unique.
+
+// My solution:
+
+// def find(a,e):
+//  try:return a.index(e)
+//  except:return'Not found'
+
+//  We've renamed the parameters to a (for array) and e (for element) to save space.
+//  We use Python's built-in index() method, which returns the index of the first occurrence of an element in a list.
+//  We wrap this in a try-except block:
+ 
+//  If e is found in a, a.index(e) returns its index.
+//  If e is not in a, a.index(e) raises a ValueError, which is caught by the except clause.
+ 
+ 
+//  In the except clause, we return the string 'Not found'.
+ 
+//  This solution is more concise and efficient than the original because:
+ 
+//  It leverages Python's built-in index() method, which is implemented in C and is faster than a manual loop.
+//  It uses Python's exception handling to deal with the "not found" case, eliminating the need for an explicit loop.
+//  It removes all unnecessary whitespace and uses minimal variable names to meet the character count requirement. 
+
+// Find the Missing Number
+
+// The following was a question that I received during a technical interview for an entry level software developer position. I thought I'd post it here so that everyone could give it a go:
+
+// You are given an unsorted array containing all the integers from 0 to 100 inclusively. However, one number is missing. Write a function to find and return this number. What are the time and space complexities of your solution?
+
+// My solution:
+
+// def missing_no(nums):
+//     expected_sum = 5050  # Sum of numbers from 0 to 100
+//     actual_sum = sum(nums)
+//     return expected_sum - actual_sum
+
+
+// The following was a question that I received during a technical interview for an entry level software developer position. I thought I'd post it here so that everyone could give it a go:
+
+// You are given an unsorted array containing all the integers from 0 to 100 inclusively. However, one number is missing. Write a function to find and return this number. What are the time and space complexities of your solution?
+
+// My solution:
+
+// def missing_no(nums):
+//     expected_sum = 5050  # Sum of numbers from 0 to 100
+//     actual_sum = sum(nums)
+//     return expected_sum - actual_sum
